@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Solomon Electric &amp; Design Mark</title>
+  <desc id="desc">Geometric S mark with black to copper red gradient.</desc>
+  <defs>
+    <linearGradient id="copperShift" x1="90" y1="60" x2="430" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.42" stop-color="#242424"/>
+      <stop offset="0.64" stop-color="#5A201A"/>
+      <stop offset="1" stop-color="#B02A1E"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g fill="none" stroke="url(#copperShift)" stroke-width="58" stroke-linecap="square" stroke-linejoin="miter" filter="url(#softShadow)">
+    <path d="M352 84H198L116 166v86h226l54 54v66l-72 72H160"/>
+    <path d="M352 84l44 44" opacity="0.9"/>
+    <path d="M160 428l-44-44" opacity="0.9"/>
+  </g>
+  <path d="M332 146H216l-38 38v22h170l112 112v80L356 502H178" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="square" stroke-linejoin="miter" opacity="0.96"/>
+</svg>

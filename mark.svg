@@ -1,21 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Solomon Electric &amp; Design Mark</title>
-  <desc id="desc">Geometric S mark with black to copper red gradient.</desc>
-  <defs>
-    <linearGradient id="copperShift" x1="90" y1="60" x2="430" y2="450" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#050505"/>
-      <stop offset="0.42" stop-color="#242424"/>
-      <stop offset="0.64" stop-color="#5A201A"/>
-      <stop offset="1" stop-color="#B02A1E"/>
-    </linearGradient>
-    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.18"/>
-    </filter>
-  </defs>
-  <g fill="none" stroke="url(#copperShift)" stroke-width="58" stroke-linecap="square" stroke-linejoin="miter" filter="url(#softShadow)">
-    <path d="M352 84H198L116 166v86h226l54 54v66l-72 72H160"/>
-    <path d="M352 84l44 44" opacity="0.9"/>
-    <path d="M160 428l-44-44" opacity="0.9"/>
-  </g>
-  <path d="M332 146H216l-38 38v22h170l112 112v80L356 502H178" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="square" stroke-linejoin="miter" opacity="0.96"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 123" role="img" aria-label="Solomon S icon">
+  <image width="128" height="123" href="data:image/webp;base64,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"/>
 </svg>

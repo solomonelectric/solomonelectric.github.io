@@ -1,458 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Solomon Electric and Design provides electrical contracting, service upgrades, remodeling, troubleshooting, and design-build electrical planning in Indianapolis and Central Indiana.">
-<title>Solomon Electric and Design | Indianapolis Electrical Contractor</title>
-<style>
-:root{
-    --black:#050505;
-    --charcoal:#111827;
-    --slate:#374151;
-    --muted:#6b7280;
-    --light:#f8fafc;
-    --card:#ffffff;
-    --gold:#d4af37;
-    --gold-dark:#aa8528;
-    --border:#e5e7eb;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Solomon Electric & Design provides electrical construction, service upgrades, remodeling, troubleshooting, and design-build electrical solutions throughout Indianapolis and Central Indiana." />
+  <title>Solomon Electric & Design | Indianapolis & Central Indiana</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml" />
+  <style>
+    :root{
+      --black:#000000;
+      --charcoal:#1E1E1E;
+      --soft-black:#111111;
+      --copper:#B02A1E;
+      --copper-dark:#7d1d16;
+      --white:#ffffff;
+      --light:#f5f5f3;
+      --gray:#d8d8d8;
+      --text:#202020;
+    }
 
-*{box-sizing:border-box;}
+    *{box-sizing:border-box;}
 
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    color:var(--charcoal);
-    line-height:1.6;
-    background:var(--light);
-}
+    html{scroll-behavior:smooth;}
 
-a{color:inherit;}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:var(--light);
+      line-height:1.6;
+    }
 
-.header{
-    background:linear-gradient(135deg, #000 0%, #111827 58%, #2a210c 100%);
-    color:white;
-    padding:28px 20px 82px;
-}
+    a{color:inherit;}
 
-.nav{
-    max-width:1120px;
-    margin:0 auto 64px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
+    .site-header{
+      background:
+        radial-gradient(circle at 78% 18%, rgba(176,42,30,.22), transparent 28%),
+        linear-gradient(135deg, #000 0%, #111 58%, #1E1E1E 100%);
+      color:var(--white);
+      border-bottom:5px solid var(--copper);
+    }
 
-.logo{
-    width:260px;
-    max-width:62vw;
-    height:auto;
-    display:block;
-}
+    .topbar{
+      max-width:1160px;
+      margin:0 auto;
+      padding:18px 22px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:18px;
+      font-size:14px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#d6d6d6;
+    }
 
-.brand-name{
-    font-weight:900;
-    letter-spacing:.02em;
-    text-transform:uppercase;
-}
+    .topbar a{
+      color:var(--white);
+      text-decoration:none;
+      font-weight:800;
+    }
 
-.nav-call{
-    color:#111827;
-    background:var(--gold);
-    text-decoration:none;
-    font-weight:800;
-    padding:12px 18px;
-    border-radius:999px;
-    box-shadow:0 10px 25px rgba(0,0,0,.22);
-    white-space:nowrap;
-}
+    .hero{
+      max-width:1160px;
+      margin:0 auto;
+      padding:58px 22px 86px;
+      display:grid;
+      grid-template-columns:minmax(0, 1.15fr) minmax(270px, .85fr);
+      gap:42px;
+      align-items:center;
+    }
 
-.hero{
-    max-width:1120px;
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:minmax(0, 1.25fr) minmax(280px, .75fr);
-    gap:38px;
-    align-items:center;
-}
+    .brand-lockup{
+      width:min(92vw, 560px);
+      height:auto;
+      display:block;
+      margin-bottom:34px;
+    }
 
-.kicker{
-    color:var(--gold);
-    font-weight:800;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    margin:0 0 10px;
-    font-size:14px;
-}
+    .eyebrow{
+      color:var(--copper);
+      text-transform:uppercase;
+      font-weight:900;
+      letter-spacing:.18em;
+      font-size:13px;
+      margin:0 0 12px;
+    }
 
-h1{
-    margin:0;
-    font-size:clamp(42px, 7vw, 76px);
-    line-height:.96;
-    letter-spacing:-.04em;
-}
+    h1{
+      margin:0;
+      font-size:clamp(42px, 7vw, 76px);
+      line-height:.98;
+      letter-spacing:-.04em;
+      color:var(--white);
+    }
 
-.hero-text{
-    font-size:20px;
-    max-width:720px;
-    color:#e5e7eb;
-    margin:24px 0 30px;
-}
+    .hero p{
+      color:#dddddd;
+      font-size:19px;
+      max-width:720px;
+      margin:24px 0 0;
+    }
 
-.actions{
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-}
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:34px;
+    }
 
-.button{
-    display:inline-block;
-    text-decoration:none;
-    border-radius:12px;
-    padding:14px 20px;
-    font-weight:800;
-}
+    .button{
+      display:inline-block;
+      text-decoration:none;
+      padding:14px 20px;
+      border-radius:5px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:14px;
+    }
 
-.button.primary{
-    background:var(--gold);
-    color:#111827;
-}
+    .button.primary{background:var(--copper); color:var(--white);}
+    .button.secondary{border:1px solid #666; color:var(--white);}
 
-.button.secondary{
-    border:1px solid rgba(255,255,255,.32);
-    color:white;
-}
+    .hero-card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.14);
+      border-top:4px solid var(--copper);
+      padding:28px;
+      box-shadow:0 28px 70px rgba(0,0,0,.34);
+    }
 
-.hero-card{
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.18);
-    border-radius:24px;
-    padding:28px;
-    box-shadow:0 22px 60px rgba(0,0,0,.32);
-}
+    .hero-card img{
+      width:90px;
+      height:auto;
+      display:block;
+      margin-bottom:18px;
+    }
 
-.hero-card h2{
-    margin-top:0;
-    color:white;
-    border:0;
-    padding:0;
-    font-size:28px;
-    line-height:1.1;
-}
+    .hero-card h2{
+      color:var(--white);
+      font-size:28px;
+      line-height:1.12;
+      margin:0 0 16px;
+    }
 
-.hero-card ul{
-    margin:0;
-    padding-left:20px;
-    color:#f3f4f6;
-}
+    .hero-card ul{
+      margin:0;
+      padding-left:20px;
+      color:#e8e8e8;
+    }
 
-.hero-card li{margin:10px 0;}
+    .hero-card li{margin:10px 0;}
 
-.section{
-    max-width:1120px;
-    margin:0 auto;
-    padding:72px 20px;
-}
+    section{padding:70px 22px;}
 
-.section.tight{padding-top:40px;}
+    .container{
+      max-width:1160px;
+      margin:0 auto;
+    }
 
-.section-heading{
-    max-width:780px;
-    margin-bottom:30px;
-}
+    h2{
+      margin:0 0 16px;
+      color:var(--black);
+      font-size:clamp(30px, 4.2vw, 48px);
+      line-height:1.08;
+      letter-spacing:-.035em;
+    }
 
-.eyebrow{
-    color:var(--gold-dark);
-    font-weight:800;
-    letter-spacing:.1em;
-    text-transform:uppercase;
-    font-size:13px;
-    margin:0 0 8px;
-}
+    .intro{
+      font-size:18px;
+      color:#404040;
+      max-width:820px;
+      margin:0;
+    }
 
-h2{
-    margin:0 0 12px;
-    font-size:clamp(30px, 4vw, 44px);
-    line-height:1.08;
-    letter-spacing:-.03em;
-    color:#0f172a;
-}
+    .grid{
+      margin-top:34px;
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:18px;
+    }
 
-.lead{
-    font-size:18px;
-    color:var(--slate);
-    margin:0;
-}
+    .card{
+      background:var(--white);
+      border:1px solid #e3e3e3;
+      border-top:4px solid var(--copper);
+      padding:24px;
+      min-height:165px;
+      box-shadow:0 14px 34px rgba(0,0,0,.06);
+    }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(3, minmax(0, 1fr));
-    gap:18px;
-}
+    .card h3{
+      margin:0 0 10px;
+      font-size:21px;
+      color:#0b0b0b;
+    }
 
-.card{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:18px;
-    padding:24px;
-    box-shadow:0 16px 40px rgba(15,23,42,.06);
-}
+    .card p{margin:0;color:#555;}
 
-.card h3{
-    margin:0 0 8px;
-    font-size:21px;
-    color:#111827;
-}
+    .dark{
+      background:var(--charcoal);
+      color:var(--white);
+    }
 
-.card p{margin:0;color:#4b5563;}
+    .dark h2{color:var(--white);}
+    .dark .intro{color:#d4d4d4;}
 
-.band{
-    background:#111827;
-    color:white;
-}
+    .split{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:38px;
+      align-items:center;
+    }
 
-.band .section{padding-top:64px;padding-bottom:64px;}
+    .feature-list{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:grid;
+      gap:12px;
+    }
 
-.band h2{color:white;}
+    .feature-list li{
+      background:rgba(255,255,255,.07);
+      border-left:4px solid var(--copper);
+      padding:15px 16px;
+      font-weight:800;
+    }
 
-.band .lead{color:#d1d5db;}
+    .process .card{position:relative; padding-top:58px;}
+    .process{counter-reset:step;}
+    .process .card::before{
+      counter-increment:step;
+      content:counter(step);
+      position:absolute;
+      top:20px;
+      left:24px;
+      width:30px;
+      height:30px;
+      display:grid;
+      place-items:center;
+      background:var(--copper);
+      color:white;
+      font-weight:900;
+      border-radius:50%;
+    }
 
-.checks{
-    display:grid;
-    grid-template-columns:repeat(4, minmax(0, 1fr));
-    gap:14px;
-    margin-top:28px;
-}
+    .market-pills{
+      margin-top:28px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
 
-.check{
-    background:rgba(255,255,255,.07);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:16px;
-    padding:18px;
-    font-weight:800;
-}
+    .pill{
+      background:var(--black);
+      color:var(--white);
+      border:1px solid #3a3a3a;
+      padding:10px 15px;
+      border-radius:999px;
+      font-weight:800;
+      font-size:14px;
+      letter-spacing:.04em;
+    }
 
-.process{counter-reset:step;}
+    .contact{
+      text-align:center;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(176,42,30,.2), transparent 32%),
+        var(--black);
+      color:var(--white);
+      padding:78px 22px;
+    }
 
-.process .card{
-    position:relative;
-    padding-top:58px;
-}
+    .contact h2{color:var(--white);}
 
-.process .card::before{
-    counter-increment:step;
-    content:counter(step);
-    position:absolute;
-    top:20px;
-    left:24px;
-    width:28px;
-    height:28px;
-    border-radius:50%;
-    background:var(--gold);
-    color:#111827;
-    display:grid;
-    place-items:center;
-    font-weight:900;
-}
+    .contact p{
+      color:#dfdfdf;
+      font-size:18px;
+    }
 
-.note{
-    margin-top:28px;
-    color:var(--muted);
-    font-size:15px;
-}
+    .phone{
+      display:block;
+      color:var(--white);
+      font-size:clamp(32px, 6vw, 58px);
+      font-weight:900;
+      text-decoration:none;
+      margin:18px 0 6px;
+    }
 
-.contact{
-    background:linear-gradient(135deg, #050505 0%, #111827 70%);
-    color:white;
-    text-align:center;
-    padding:78px 20px;
-}
+    .email{
+      color:var(--white);
+      text-decoration:none;
+      border-bottom:2px solid var(--copper);
+      padding-bottom:3px;
+    }
 
-.contact-inner{
-    max-width:780px;
-    margin:0 auto;
-}
+    footer{
+      background:#050505;
+      color:#aaa;
+      text-align:center;
+      padding:24px 18px;
+      font-size:14px;
+    }
 
-.contact h2{color:white;}
+    @media(max-width:880px){
+      .hero,.split{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr 1fr;}
+    }
 
-.contact p{
-    color:#e5e7eb;
-    font-size:18px;
-}
-
-.contact-links{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:14px;
-    margin-top:26px;
-}
-
-.contact-links a{
-    color:#111827;
-    background:var(--gold);
-    text-decoration:none;
-    font-weight:900;
-    border-radius:12px;
-    padding:14px 18px;
-}
-
-footer{
-    text-align:center;
-    padding:22px 20px;
-    background:#000;
-    color:#d1d5db;
-    font-size:14px;
-}
-
-@media (max-width:860px){
-    .hero{grid-template-columns:1fr;}
-    .grid{grid-template-columns:1fr 1fr;}
-    .checks{grid-template-columns:1fr 1fr;}
-}
-
-@media (max-width:620px){
-    .header{padding-top:22px;}
-    .nav{align-items:flex-start;flex-direction:column;margin-bottom:42px;}
-    .nav-call{width:100%;text-align:center;}
-    .grid,.checks{grid-template-columns:1fr;}
-    .hero-card{padding:22px;}
-    .section{padding:54px 18px;}
-}
-</style>
+    @media(max-width:620px){
+      .topbar{flex-direction:column; align-items:flex-start; letter-spacing:.04em;}
+      .hero{padding:38px 18px 58px;}
+      .brand-lockup{width:100%; margin-bottom:26px;}
+      .grid{grid-template-columns:1fr;}
+      .actions{flex-direction:column;}
+      .button{width:100%; text-align:center;}
+      section{padding:54px 18px;}
+    }
+  </style>
 </head>
 <body>
 
-<header class="header">
-    <nav class="nav" aria-label="Main navigation">
-        <div>
-            <img src="IMG_3336.jpeg" alt="Solomon Electric and Design logo" class="logo">
-            <div class="brand-name">Solomon Electric and Design</div>
-        </div>
-        <a class="nav-call" href="tel:3174432490">Call 317-443-2490</a>
-    </nav>
+<header class="site-header">
+  <div class="topbar">
+    <div>Indianapolis & Central Indiana</div>
+    <a href="tel:3174432490">317-443-2490</a>
+  </div>
 
-    <div class="hero">
-        <div>
-            <p class="kicker">Indianapolis & Central Indiana</p>
-            <h1>Electrical work designed before it is built.</h1>
-            <p class="hero-text">Solomon Electric and Design provides electrical contracting, service upgrades, remodeling, troubleshooting, and design-build planning for homeowners, businesses, and contractors across Central Indiana.</p>
-            <div class="actions">
-                <a class="button primary" href="tel:3174432490">Call Now</a>
-                <a class="button secondary" href="mailto:solomonelectric@outlook.com">Email Us</a>
-            </div>
-        </div>
-
-        <aside class="hero-card">
-            <h2>Built for people who want it done right.</h2>
-            <ul>
-                <li>Licensed Master Electrician</li>
-                <li>20+ years of electrical experience</li>
-                <li>Design-build approach to cleaner solutions</li>
-                <li>Clear scope, practical planning, quality workmanship</li>
-            </ul>
-        </aside>
+  <div class="hero">
+    <div>
+      <img src="logo.svg" alt="Solomon Electric & Design" class="brand-lockup" />
+      <p class="eyebrow">Electrical Construction • Design-Build Solutions</p>
+      <h1>Plan it right. Build it clean.</h1>
+      <p>
+        Solomon Electric & Design provides electrical construction, service upgrades,
+        remodeling, troubleshooting, and design-build electrical solutions for residential
+        and commercial clients throughout Central Indiana.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="tel:3174432490">Call 317-443-2490</a>
+        <a class="button secondary" href="mailto:solomonelectric@outlook.com?subject=Project%20Inquiry%20-%20Solomon%20Electric%20%26%20Design">Email Project Details</a>
+      </div>
     </div>
+
+    <aside class="hero-card">
+      <img src="mark.svg" alt="Solomon S mark" />
+      <h2>Built for projects that need more than a quick fix.</h2>
+      <ul>
+        <li>Licensed Master Electrician</li>
+        <li>20+ years of electrical experience</li>
+        <li>Residential and commercial project experience</li>
+        <li>Clear scope, pricing, and communication</li>
+      </ul>
+    </aside>
+  </div>
 </header>
 
 <main>
-    <section class="section tight">
-        <div class="section-heading">
-            <p class="eyebrow">What We Do</p>
-            <h2>Electrical contracting with a design-first mindset.</h2>
-            <p class="lead">A good electrical project is not just about pulling wire. It is about understanding the space, planning the system, solving problems before they become expensive, and delivering work that is safe, clean, and built to last.</p>
-        </div>
+  <section>
+    <div class="container">
+      <p class="eyebrow">About</p>
+      <h2>Electrical work with planning, precision, and practical field experience.</h2>
+      <p class="intro">
+        A good electrical project is not just about pulling wire. It is about understanding
+        the space, planning the system, solving problems before they become expensive, and
+        delivering work that is safe, clean, and built to last.
+      </p>
+    </div>
+  </section>
 
-        <div class="grid">
-            <article class="card">
-                <h3>Service Upgrades</h3>
-                <p>Meter bases, panels, grounding, risers, feeders, and electrical capacity upgrades for modern homes and buildings.</p>
-            </article>
-            <article class="card">
-                <h3>Panels & Circuits</h3>
-                <p>Panel replacements, subpanels, breaker corrections, dedicated circuits, and safer electrical organization.</p>
-            </article>
-            <article class="card">
-                <h3>Remodeling & Rewiring</h3>
-                <p>Kitchen, bath, basement, addition, and whole-home wiring updates planned around the finished space.</p>
-            </article>
-            <article class="card">
-                <h3>Lighting Design & Installation</h3>
-                <p>Recessed lighting, exterior lighting, pendants, switching, controls, layout improvements, and clean installation.</p>
-            </article>
-            <article class="card">
-                <h3>Troubleshooting & Repairs</h3>
-                <p>Practical diagnosis for outlets, switches, breakers, lighting, damaged wiring, and electrical issues that need a real answer.</p>
-            </article>
-            <article class="card">
-                <h3>Design-Build Electrical</h3>
-                <p>Early planning support for homeowners, builders, and remodelers who want electrical decisions made before the walls are closed.</p>
-            </article>
-        </div>
-    </section>
+  <section class="dark">
+    <div class="container">
+      <p class="eyebrow">Services</p>
+      <h2>What We Do</h2>
+      <p class="intro">
+        From service upgrades and remodels to commercial renovations and early project planning,
+        Solomon Electric & Design helps clients move from idea to finished electrical installation.
+      </p>
 
-    <section class="band">
-        <div class="section">
-            <p class="eyebrow">Why It Matters</p>
-            <h2>Better planning. Cleaner installs. Fewer surprises.</h2>
-            <p class="lead">Solomon Electric and Design combines field experience with an engineering-minded approach, so the work is not only code-conscious and safe, but also practical for how the space will actually be used.</p>
-            <div class="checks">
-                <div class="check">Clear estimates</div>
-                <div class="check">Thoughtful layouts</div>
-                <div class="check">Safe installations</div>
-                <div class="check">Local accountability</div>
-            </div>
-        </div>
-    </section>
+      <div class="grid">
+        <article class="card">
+          <h3>Service Upgrades</h3>
+          <p>Meter bases, panels, feeders, grounding, risers, and electrical capacity upgrades.</p>
+        </article>
+        <article class="card">
+          <h3>Panel Replacements</h3>
+          <p>Panel upgrades, replacements, cleanup, labeling, and electrical modernization.</p>
+        </article>
+        <article class="card">
+          <h3>Rewiring & Remodeling</h3>
+          <p>Electrical updates for remodels, additions, kitchens, baths, and whole-house projects.</p>
+        </article>
+        <article class="card">
+          <h3>Commercial Electrical</h3>
+          <p>Electrical work for offices, churches, retail spaces, and small commercial renovations.</p>
+        </article>
+        <article class="card">
+          <h3>Lighting Installation</h3>
+          <p>Interior, exterior, architectural, and practical lighting improvements.</p>
+        </article>
+        <article class="card">
+          <h3>Design-Build Planning</h3>
+          <p>Planning, budgeting, coordination, and execution for electrical projects.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <section class="section">
-        <div class="section-heading">
-            <p class="eyebrow">Our Process</p>
-            <h2>Simple, clear, and professional from the first call.</h2>
-        </div>
+  <section class="dark">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Why Solomon</p>
+        <h2>Better planning. Cleaner installs. Fewer surprises.</h2>
+        <p class="intro">
+          Some projects need more than installation. They need someone who can look at existing
+          conditions, understand the goal, think through the electrical system, and build a practical path forward.
+        </p>
+      </div>
+      <ul class="feature-list">
+        <li>Licensed Master Electrician</li>
+        <li>Design-build approach</li>
+        <li>Safety and quality focused</li>
+        <li>Local accountability</li>
+        <li>Clear scope and communication</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="grid process">
-            <article class="card">
-                <h3>Talk Through the Project</h3>
-                <p>We start by understanding the problem, the goals, the timeline, and what finished result you are trying to create.</p>
-            </article>
-            <article class="card">
-                <h3>Plan the Scope</h3>
-                <p>We identify the important details, possible obstacles, and the cleanest way to complete the work before pricing it.</p>
-            </article>
-            <article class="card">
-                <h3>Build It Right</h3>
-                <p>We complete the work with care, communicate clearly, and keep the installation clean, safe, and intentional.</p>
-            </article>
-        </div>
-    </section>
+  <section>
+    <div class="container">
+      <p class="eyebrow">Process</p>
+      <h2>Simple, clear, and professional from the first call.</h2>
+      <div class="grid process">
+        <article class="card">
+          <h3>Talk Through the Project</h3>
+          <p>We start by understanding the problem, the goals, the timeline, and the finished result you want.</p>
+        </article>
+        <article class="card">
+          <h3>Plan the Scope</h3>
+          <p>We identify important details, possible obstacles, and the cleanest way to complete the work.</p>
+        </article>
+        <article class="card">
+          <h3>Build It Right</h3>
+          <p>We complete the work with care, communicate clearly, and keep the installation clean and intentional.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <section class="section">
-        <div class="section-heading">
-            <p class="eyebrow">Service Area</p>
-            <h2>Serving Indianapolis and Central Indiana.</h2>
-            <p class="lead">Based in the Indianapolis area, Solomon Electric and Design serves homeowners, businesses, builders, and remodelers throughout Central Indiana.</p>
-            <p class="note">Not sure whether your project is a fit? Call or email with the basics and we will help you figure out the next step.</p>
-        </div>
-    </section>
+  <section>
+    <div class="container">
+      <p class="eyebrow">Markets</p>
+      <h2>Serving homeowners, businesses, churches, and project teams.</h2>
+      <div class="market-pills">
+        <span class="pill">Residential</span>
+        <span class="pill">Commercial</span>
+        <span class="pill">Churches</span>
+        <span class="pill">Remodels</span>
+        <span class="pill">Service Upgrades</span>
+        <span class="pill">Design-Build</span>
+        <span class="pill">Troubleshooting</span>
+      </div>
+    </div>
+  </section>
 </main>
 
 <section class="contact">
-    <div class="contact-inner">
-        <p class="eyebrow">Contact</p>
-        <h2>Ready to talk through your electrical project?</h2>
-        <p>Call, text, or email Solomon Electric and Design to start a conversation about your project.</p>
-        <div class="contact-links">
-            <a href="tel:3174432490">317-443-2490</a>
-            <a href="mailto:solomonelectric@outlook.com">solomonelectric@outlook.com</a>
-        </div>
-    </div>
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h2>Ready to talk through your electrical project?</h2>
+    <a class="phone" href="tel:3174432490">317-443-2490</a>
+    <p><a class="email" href="mailto:solomonelectric@outlook.com?subject=Project%20Inquiry%20-%20Solomon%20Electric%20%26%20Design">solomonelectric@outlook.com</a></p>
+    <p>Indianapolis & Central Indiana</p>
+  </div>
 </section>
 
 <footer>
-    © 2026 Solomon Electric and Design · Indianapolis & Central Indiana
+  © 2026 Solomon Electric & Design. All rights reserved.
 </footer>
 
 </body>

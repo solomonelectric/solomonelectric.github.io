@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 310" role="img" aria-labelledby="title desc">
+  <title id="title">Solomon Electric &amp; Design Logo</title>
+  <desc id="desc">Solomon Electric &amp; Design wordmark with geometric S mark.</desc>
+  <defs>
+    <linearGradient id="copperShift" x1="50" y1="30" x2="260" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.42" stop-color="#242424"/>
+      <stop offset="0.64" stop-color="#5A201A"/>
+      <stop offset="1" stop-color="#B02A1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="980" height="310" fill="none"/>
+  <g transform="translate(40 38) scale(.46)" fill="none" stroke="url(#copperShift)" stroke-width="58" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M352 84H198L116 166v86h226l54 54v66l-72 72H160"/>
+    <path d="M352 84l44 44" opacity="0.9"/>
+    <path d="M160 428l-44-44" opacity="0.9"/>
+    <path d="M332 146H216l-38 38v22h170l112 112v80L356 502H178" stroke="#ffffff" stroke-width="34" opacity="0.96"/>
+  </g>
+  <text x="300" y="118" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="800" letter-spacing="15" fill="#ffffff">SOLOMON</text>
+  <text x="305" y="180" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" letter-spacing="9" fill="#B02A1E">ELECTRIC &amp; DESIGN</text>
+  <line x1="305" y1="205" x2="820" y2="205" stroke="#B02A1E" stroke-width="4"/>
+  <text x="330" y="252" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="12" fill="#ffffff">DESIGN • BUILD • POWER</text>
+</svg>

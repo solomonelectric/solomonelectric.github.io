@@ -46,6 +46,7 @@
     .alt{border:1px solid rgba(189,63,53,.82);background:rgba(7,9,12,.54)}
     .location{color:#ddd;font-size:17px}
     .service-band{position:relative;z-index:2;margin-top:70px}
+    .service-title{color:var(--copper2);font-size:13px;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 16px}
     .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
     .card{position:relative;background:linear-gradient(145deg,rgba(22,27,31,.94),rgba(10,12,14,.88));border:1px solid rgba(189,63,53,.34);border-radius:14px;padding:28px 22px;min-height:190px;box-shadow:var(--shadow);overflow:hidden}
     .card:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--copper2),rgba(189,63,53,.15))}
@@ -113,6 +114,7 @@
         </div>
 
         <div id="services" class="service-band">
+          <div class="service-title">Services</div>
           <div class="service-grid">
             <article class="card">
               <h3>New Construction & Build-Outs</h3>
